@@ -4,20 +4,31 @@ import { useState } from "react";
 import LevelSelector from "../components/LevelSelector";
 
 function index() {
-  const onSelectionChanged = (i) => setSelectedLevel(i);
-  const [selectedLevel, setSelectedLevel] = useState(1);
+  const [bloodLevel, setBloodLevel] = useState(1);
   return (
     <>
       <Head>
         <title>Movie Selector</title>
       </Head>
-      <div>
-        <h1>Movie Selector</h1>
+      <section>
+        <span className="levelSelectorLabel">Blood Level</span>
         <LevelSelector
-          selectedLevel={selectedLevel}
-          onSelectionChanged={onSelectionChanged}
+          selectedLevel={bloodLevel}
+          onSelectionChanged={(bloodLevel) => setBloodLevel(bloodLevel)}
         />
-      </div>
+
+        <span className="levelSelectorLabel">Blood Level</span>
+        <LevelSelector
+          selectedLevel={bloodLevel}
+          onSelectionChanged={(bloodLevel) => setBloodLevel(bloodLevel)}
+        />
+
+        <span className="levelSelectorLabel">Blood Level</span>
+        <LevelSelector
+          selectedLevel={bloodLevel}
+          onSelectionChanged={(bloodLevel) => setBloodLevel(bloodLevel)}
+        />
+      </section>
     </>
   );
 }

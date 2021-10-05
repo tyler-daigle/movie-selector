@@ -8,21 +8,19 @@ function LevelSelector({
   const currentLevel = selectedLevel - 1;
 
   return (
-    <div className={styles.levelSelectorContainer}>
+    <ul className={styles.levelSelectorContainer}>
       {Array.from({ length: numLevels }, (a, index) => {
         let classes = `${styles.levelSelectorItem} ${
           index <= currentLevel ? styles.selectedLevel : styles.notSelectedLevel
         }`;
         return (
-          <span
+          <li
             onClick={() => onSelectionChanged(index + 1)}
             className={classes}
-          >
-            {index}
-          </span>
+          ></li>
         );
       })}
-    </div>
+    </ul>
   );
 }
 
