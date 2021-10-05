@@ -1,0 +1,11 @@
+.findButton {
+  width: 100%;
+  margin-top: 1.25rem;
+  background-color: transparent;
+  border: solid 1px #c80000;
+  padding: 1.25rem;
+  font-size: 3rem;
+  font-family: inherit;
+  color: #c80000;
+  border-radius: 15px;
+}

@@ -1,0 +1,40 @@
+.ratingSelectionContainer {
+  margin-top: 1.25rem;
+  padding: 1.25rem 1.25rem;
+
+  background-color: #202d31;
+  border-radius: 15px;
+}
+
+.ratingSelectionLabel {
+  display: block;
+  font-size: 1.25rem;
+  margin-bottom: 1.25rem;
+  font-weight: bold;
+  color: white;
+}
+
+.ratingChoices {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.ratingLabel {
+  margin: 0;
+  font-size: 1.25rem;
+  color: white;
+}
+.ratingCheckBox {
+  transform: translateY(11px);
+  margin-right: 1rem;
+  appearance: none;
+  height: 30px;
+  width: 30px;
+  background-color: black;
+  border: solid 1px #c80000;
+}
+
+.ratingCheckBox:checked {
+  background-color: #c80000;
+}
