@@ -39,6 +39,9 @@
   background-image: url("/images/skull_white_small.png");
 }
 
+.levelSelectorItem:active {
+  outline: 2px solid red;
+}
 /* .levelSelectorContainer:hover .levelSelectorItem {
   background-image: url("/images/skull_red_small.png");
 }

@@ -1,6 +1,6 @@
 .scareRangeContainer {
   padding: 1.25rem 1.25rem;
-  padding-bottom: 4rem;
+
   background-color: #202d31;
   border-radius: 15px;
 }
@@ -9,4 +9,11 @@
   font-size: 1.25rem;
   font-weight: bold;
   color: white;
+  margin-bottom: 1.25rem;
+  display: block;
+}
+
+.scareRangeControl {
+  display: block;
+  width: 100%;
 }
