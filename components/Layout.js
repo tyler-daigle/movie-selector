@@ -21,7 +21,10 @@ function Layout({ children }) {
       </div>
 
       <footer>
-        <p>Brought to you by Shudder.</p>
+        <p>
+          This is just a demo project. View the code at{" "}
+          <a href="https://github.com/tyler-daigle/movie-selector">Github</a>.
+        </p>
       </footer>
     </>
   );
